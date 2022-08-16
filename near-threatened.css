@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(245,245,245);
+}
+header {
+    position: fixed;
+    margin-top: 75px;
+    width: 100vw;
+    background-color: rgb(255,255,255);
+}
+header ul {
+    display: block;
+    padding: 10px;
+    width: 100vw;
+    height: 60px;
+}
+header ul li {
+    display: inline-block;
+}
+header li img {
+    width: 110px;
+    height: 42px;
+}
+i {
+    cursor: pointer;
+}
+header .bi {
+    margin: 5px 20px 8px 15px;
+    font-size: 24px;
+    pointer-events: none;
+}
+main {
+    margin: 0 60px;
+    padding-top: 150px;
+}
+.story {
+    padding: 15px;
+    height: 90px;
+}
+.story-infro {
+    display: inline-flex;
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    align-items: center;
+    justify-content: center;
+}
+.story-infro .picts {
+    border: 2px solid rgb(255,255,255);
+}
+section {
+    margin: 0 60px;
+}
+.card, .story {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: rgb(255,255,255);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.card-picts, .comment, .card-icon, .selection {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    align-items: center;
+}
+.card-picts span {
+    margin-left: 20px;
+}
+.picts {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(244,240,236);
+}
+.bi-three-dots-vertical, .bi-bookmark, .bi-plus-circle {
+    margin-left: auto;
+    order: 2;
+}
+.card-img {
+    width: 100%;
+}
+.card-icon {
+    margin-bottom: 0;
+}
+.card-icon i {
+    margin-right: 15px;
+    font-size: 28px;
+}
+.bi-heart-fill {
+    color: rgb(255,0,0);
+}
+.bi-bookmark-fill {
+    margin-left: auto;
+    order: 2;
+}
+.card-like {
+    padding-left: 10px;
+}
+.card-infro {
+    padding: 10px;
+}
+.bi-exclamation-triangle-fill {
+    margin-right: 5px;
+}
+.comment .picts {
+    width: 35px;
+    height: 35px;
+}
+input {
+    margin: 0 15px;
+    padding-left: 5px;
+    width: 85%;
+    height: 30px;
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+.selection {
+    justify-content: space-between;
+}
+.selection i {
+    font-size: 22px;
+}
+.selection .picts {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+@media all and (max-width: 1200px) {
+    .story {
+        overflow-y: scroll;
+    }
+}
+@media all and (max-width: 780px) {
+    header {
+        margin-top: 50px;
+    }
+    .card, .story {
+        width: 100%;
+    }
+}

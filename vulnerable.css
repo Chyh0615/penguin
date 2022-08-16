@@ -1,0 +1,172 @@
+body {
+    background-color: rgb(216, 200, 214);
+}
+header {
+    position: fixed;
+    margin-top: 80px;
+    width: 100vw;
+    background-color: rgb(255,240,245);
+    color: rgb(105,105,105);
+}
+header h3 {
+    display: inline;
+}
+header .fa-solid {
+    margin: 5px 20px 8px 15px;
+    font-size: 20px;
+}
+.fa-bullhorn {
+    float: left;
+}
+.fa-angle-down {
+    float: right;
+}
+.vu-intro {
+    display: none;
+    margin: 5px 58px;
+}
+section {
+    padding-top: 120px;
+}
+section div {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.img {
+    margin: 20px 10px;
+    width: 200px;
+    height: 280px;
+    border-radius: 15px;
+}
+.southern-rockhopper {
+    float: left;
+}
+.picts {
+    display: inline;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    background-color: rgb(244,240,236);
+}
+.name {
+    display: flex;
+    margin-top: 2px;
+    padding: 0 10px;
+}
+.detail {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    background-color: rgb(252,255,164);
+    border-radius: 30px;
+}
+.fa-circle-info {
+    margin-right: 5px;
+}
+.macaroni img, .macaroni .detail {
+    float: right;
+}
+.macaroni .picts {
+    margin-right: 10px;
+    margin-left: 0;
+}
+.macaroni .name {
+    display: flex;
+    justify-content: right;
+}
+.message {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(178,132,190);
+}
+.message i {
+    margin: 0 15px;
+    font-size: 36px;
+    cursor: pointer;
+}
+.bi-plus-lg {
+    color: rgb(245,245,220);
+}
+.bi-camera-fill {
+    color: rgb(52,52,52);
+}
+input {
+    margin: 0 15px;
+    padding: 0 20px;
+    width: 70%;
+    height: 36px;
+    border: 0.5px solid rgb(139, 77, 154);
+    border-radius: 30px;
+    background-color: rgb(152, 98, 165);
+    box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.1);;
+}
+input:focus {
+    outline: none;
+}
+footer {
+    background-color: rgba(0,0,0);
+    color: rgb(255, 255, 204);
+    word-break: break-all;
+}
+.vu-infro {
+    display: flex;
+    padding: 60px;
+    text-align: left;
+    align-items: flex-start;
+}
+.vu-infro h3 {
+    display: inline;
+    margin-top: 0;
+    writing-mode: vertical-lr;
+}
+.infroAddress {
+    display: inline-block;
+    margin-left: 30px;
+}
+@media all and (max-width: 1035px) {
+    .message {
+        padding: 10px 5px;
+    }
+    .message i {
+        margin: 0 10px;
+    }
+    input {
+        margin: 0;
+    }
+}
+@media all and (max-width: 780px) {
+    header {
+        margin-top: 55px;
+    }
+    header .fa-solid, header h3, .vu-intro {
+       font-size: 12px; 
+    }
+    .vu-intro {
+        margin: 5px 48px;
+    }
+    .message {
+        padding: 10px 2px;
+    }
+    .message i {
+        font-size: 30px;
+        margin: 0 5px;
+    }
+    input {
+        width: 60%;
+    }
+}
+@media all and (max-width: 414px) {
+    .message {
+        padding: 10px 2px 10px 10px;
+    }
+    .message i {
+        font-size: 20px;
+        margin: 0 2px;
+    }
+}

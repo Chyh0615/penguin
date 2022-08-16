@@ -1,0 +1,222 @@
+section {
+    display: grid;
+    margin: 0 auto 50px auto;
+    padding-top: 120px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 580px);
+    grid-template-rows: repeat(3, 550px);
+    grid-gap: 20px;
+}
+div img {
+    width: 100%;
+    height: 100%;
+}
+.en-penguin {
+    display: block;
+    padding: 30px 30px 0 30px;
+    width: 580px;
+    height: 550px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/05/05/09/42/paper-753508_1280.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.4);
+    line-height: 1.7;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.en-penguin .front, .en-penguin .back {
+    display: block;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front, .back {
+    width: 520px;
+    height: 490px;
+}
+.back {
+    transform: rotateY(180deg);
+}
+.flipped {
+    transform: rotateY(180deg);
+}
+.african-img, .north-img-second-page {
+    width: 90%;
+    height: 90%;
+}
+.african-img, .en-img, .yellow-img, .img-penguin, .north-img-second-page, .img-infro, .front .galapagos-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.en-img {
+    width: 150px;
+    height: 150px;
+}
+.en-intro {
+    margin-top: 30px;
+}
+.img-penguin {
+    margin-top: 20px;
+    width: 350px;
+    height: 400px;
+}
+.spec::before {
+    content:'';
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 150px;
+    height: 30px;
+    opacity: 0.7;
+    background: rgb(189,183,107);
+    transform: skew(35deg, -35deg);
+}
+.spec img {
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.yellow-img {
+    width: 80%;
+    height: 80%;
+}
+.yellow-infro {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 80%;
+    background-color: rgba(0,0,0,0.8);
+    color: rgb(255,255,255);
+}
+.penguin-erect {
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    border: 10px solid rgb(255,255,255);
+    transform: skew(10deg,-10deg);
+}
+.img-erect {
+    position: relative;
+    top: 35px;
+    right: 30px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid rgb(0,0,0);
+    transform: skew(-10deg,10deg);
+}
+.north {
+    margin: 20px;
+    width: 220px;
+    height: 400px;
+    float: left;
+    border: 1px solid #ddd;;
+    background-color: rgb(255,255,255);
+    text-align: center;
+    font-size: 8px;
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.second {
+    margin-top: 90px; 
+    height: 360px;
+}
+.north img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+.north-img {
+    height: 300px !important;
+}
+.north::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 55px;
+    width: 100px;
+    height: 30px;
+    background: rgba(255, 255, 200, 0.8);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+.north a p {
+    padding: 5px;
+}
+.img-infro {
+    width: 90%;
+    background-color: rgba(0,0,0,0.8);
+    color: rgb(255,255,255);
+    font-size: 8px;
+}
+.galapagos-img {
+    width: 300px;
+    height: 350px;
+}
+.galapagos-infro {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.8);
+    color: rgb(255,255,255);
+    font-size: 8px;
+}
+.en-penguin h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.bi-info-circle {
+    margin-right: 5px;
+}
+@media all and (max-width: 1180px) {
+    section {
+        grid-template-columns: repeat(1, 580px);
+        grid-template-rows: repeat(6, 550px);
+    }
+}
+@media all and (max-width: 580px) {
+    section {
+        grid-template-columns: repeat(1, 400px);
+        grid-template-rows: repeat(6, 730px);
+    }
+    .en-penguin {
+        padding: 15px 15px 0 15px;
+        width: 400px;
+        height: 730px;
+    }
+    .front, .back {
+        width: 370px;
+        height: 700px;
+    }
+    .img-penguin {
+        margin-top: 100px;
+    }
+    .spec::before {
+        margin-top: 0;
+        margin-left: -5px;
+    }
+    .penguin-erect {
+        margin-bottom: 0;
+    }
+    .img-erect {
+        margin-top: -50px;
+        left: 80px;
+    }
+    .north {
+        margin: 10px 0;
+    }
+    .second {
+        margin-left: 150px;
+        margin-top: -35px;
+        height: 320px;
+    }
+    .north a p {
+        padding: 0px;
+    }
+    .galapagos-img {
+        margin-top: 50px;
+        width: 350px;
+        height: 400px;
+    }
+    .galapagos-infro {
+        width: 350px;
+    }
+}

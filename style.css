@@ -1,0 +1,323 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    cursor: context-menu;
+    list-style: none;
+    -webkit-user-drag: none;
+}
+nav {
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    background-color: rgba(0,0,0);
+    z-index: 5;
+    user-select: none;   
+}
+.fa-bars {
+    display: none;
+}
+nav i:hover {
+    color: rgb(211,211,211);
+}
+nav ul {
+    display: block;
+}
+nav h2 {
+    display: inline-block;
+    margin: 8px 20px;
+    padding: 8px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
+    font-size: 26px;
+}
+a, a h2, nav h2, a p {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav i {
+    margin-top: 24px;
+    margin-left: 30px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    float: left;
+}
+.penguin {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    animation: fadein 2s;
+}
+.penguin > img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+#backToTop {
+    position: fixed;
+    display: none;
+    bottom: 30px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(220,220,220);
+    color: black;
+    font-size: 26px;
+    box-shadow: 1px 1px 5px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+}
+#backToTop, #backToTop i  {
+    cursor: pointer;
+}
+.traits, .danger {
+    display: block;
+    margin: 100px;
+}
+.traits > h2, .danger > h2, .iucn > h2, .conservation > h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px;
+}
+.img {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.img1 {
+    position: relative;
+    width: 310px;
+    height: 200px;
+}
+.img2 {
+    position: absolute;
+    left: 25%;
+    margin-top: 50px;
+    width: 170px;
+    height: 250px;
+} 
+.traits-content {
+    width: 600px;
+    font-size: 18px;
+    float: right;
+}
+.danger p {
+    font-size: 18px;
+}
+.iucn {
+    margin: 100px;
+}
+.iucn > img {
+    margin: 0 13px;
+    width: 150px;
+    height: 150px;
+    float: right;
+}
+.iucn > p {
+    margin: 15px;
+    font-size: 18px;
+}
+.conservation {
+    margin: 100px;
+    font-size: 18px;
+}
+.conservation > h2 {
+    background-color: rgb(202, 54, 54);
+}
+.conservation ul {
+    margin: 10px 0;
+    list-style-type: none;
+}
+ul h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.img3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 590px;
+    height: 150px;
+}
+.img3-infro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    width: 590px;
+    background-color: rgba(0,0,0,0.8);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+}
+li i {
+    margin-right: 10px;
+}
+footer {
+    background-color: rgba(0,0,0);
+    color: rgb(255, 255, 204);
+    word-break: break-all;
+}
+.infro {
+    display: flex;
+    padding: 60px;
+    text-align: left;
+    align-items: flex-start;
+}
+.infro h3 {
+    display: inline;
+    writing-mode: vertical-lr;
+}
+.infroAddress {
+    display: inline-block;
+    margin-left: 30px;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@media all and (max-width: 1200px) {
+    .img1 {
+        width: 250px;
+        height: 145px;
+    }
+    .img2 {
+        width: 140px;
+        height: 200px;
+    }
+    .traits-content {
+        width: 500px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .img1 {
+        width: 200px;
+        height: 100px;
+    }
+    .img2 {
+        width: 100px;
+        height: 160px;
+    }
+    .traits {
+        height: 300px;
+    }
+    .img3 {
+        width: 450px;
+        height: 120px;
+    }
+    .img3-infro {
+        width: 450px;
+        font-size: 10px;
+    }
+    .conservation {
+        margin: 60px 40px;
+    }
+}
+@media all and (max-width: 950px) {
+    nav > i {
+        margin: 24px 15px;
+    }
+    .fa-house-chimney {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .img {
+        display: inline;
+    }
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        left: 10%;
+        margin-top: 0;
+        width: 150px;
+        height: 220px;
+    }
+    .traits, .danger, .iucn {
+        margin: 50px;
+    }
+}
+@media all and (max-width: 780px) {
+    nav {
+        height: 50px;
+    }
+    nav i {
+        margin: 12px 20px;
+        font-size: 24px;
+    }
+    .menu {
+        height: inherit;
+    }
+    .fa-bars {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        background: rgb(255, 255, 255);
+        text-align: left;
+        overflow: hidden;
+    }
+    nav h2 {
+        display: block;
+        margin: 0;
+        padding: 5px;
+        width: 100vw;
+        height: 40px;
+        border: none !important;
+        border-bottom: 2px solid rgb(0,0,0) !important;
+        border-radius: 0;
+        font-size: 20px;
+    }
+    .img {
+        display: none;
+    }
+    .traits {
+        height: 418px;
+    }
+    .traits-content {
+        width: auto;
+    }
+    .conservation {
+        margin: 60px 25px;
+    }
+@media all and (max-width: 576px) {
+    .img3 {
+        margin: auto;
+        width: 300px;
+        height: 80px;
+    }
+    .img3-infro {
+        width: 300px;
+        word-break: break-all;
+    }
+}
+@media all and (max-width: 414px) {
+    .traits, .danger, .iucn {
+        margin: 50px 0;
+    }
+    .img3, .img3-infro {
+        display: none;
+    }
+    .infro {
+        padding: 15px;
+    }
+}
+}
